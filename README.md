@@ -15,8 +15,9 @@ vhost project folder structure
   * log 
   * tmp 
 
-web-app folder structure (within vhost project folder structure) 
-================================================================= 
+web-app folder structure  
+=========================
+N.b.: within vhost project folder structure
 
  * **public** 
   * {routerfile}.php 
