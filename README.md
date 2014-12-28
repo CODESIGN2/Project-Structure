@@ -23,7 +23,7 @@ web-app folder structure (within vhost project folder structure)
 	 * img 
 	 * js 
 	 * themes 
-		 * theme 
+		 * {theme[x]} 
 			 * font 
 			 * css 
 			 * img 
