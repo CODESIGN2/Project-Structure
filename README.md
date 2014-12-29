@@ -41,16 +41,12 @@ N.b.: within vhost project folder structure
          * autoload.php (composer autoloader)
          * siteEngine 
              * **data** 
-             * schemas
-             * regex 
              * models
              * libaries
              * helpers
              * **assets** 
          * {vendor[x]} 
-             * data 
-             * schemas
-             * regex 
+             * **data** 
              * models
              * libaries
              * helpers
