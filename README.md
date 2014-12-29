@@ -8,12 +8,12 @@ vhost project folder structure
 
  * vhosts (usually /usr/share/nginx/vhosts or /var/www/vhosts)
   * {projectname}
-  * **public** 
-  * **private** 
-  * backup 
-  * certs 
-  * log 
-  * tmp 
+    * **public** 
+    * **private** 
+    * backup 
+    * certs 
+    * log 
+    * tmp 
 
 web-app folder structure  
 =========================
