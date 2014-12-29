@@ -38,6 +38,7 @@ N.b.: within vhost project folder structure
   * uploads 
   * src (composer.json lives in here)
      * vendor 
+         * autoload.php (composer autoloader)
          * siteEngine 
              * **data** 
              * schemas
