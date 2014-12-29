@@ -36,23 +36,24 @@ N.b.: within vhost project folder structure
   * licenses 
  * **private** 
   * uploads 
-  * src 
-     * siteEngine 
-         * **data** 
-         * schemas
-         * regex 
-         * models
-         * libaries
-         * helpers
-         * **assets** 
-     * {vendor[x]} 
-         * data 
-         * schemas
-         * regex 
-         * models
-         * libaries
-         * helpers
-         * **assets** 
+  * src (composer.json lives in here)
+     * vendor 
+         * siteEngine 
+             * **data** 
+             * schemas
+             * regex 
+             * models
+             * libaries
+             * helpers
+             * **assets** 
+         * {vendor[x]} 
+             * data 
+             * schemas
+             * regex 
+             * models
+             * libaries
+             * helpers
+             * **assets** 
 
 Assets folder structure
 ========================
