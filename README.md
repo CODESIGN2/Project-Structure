@@ -30,9 +30,10 @@ N.b.: within vhost project folder structure
          * font 
          * css 
          * img 
-         * js 
-    * media (symbolic links to uploads) 
-    * licenses 
+         * js
+         * licenses
+  * media (symbolic links to uploads) 
+  * licenses 
  * **private** 
   * uploads 
   * src 
