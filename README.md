@@ -9,7 +9,7 @@ vhost project folder structure
  * vhosts (usually /usr/share/nginx/vhosts or /var/www/vhosts)
   * {projectname}
     * **public** 
-    * **private** ***used to be CI for codeigniter***
+    * **private** (***used to be CI for codeigniter***)
     * backup 
     * certs 
     * log 
