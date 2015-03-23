@@ -10,7 +10,7 @@ server {
 	error_log /dev/null;
 
 	location / {
-	  index index.html	index.php	router.php;
+		index	index.html	index.php	router.php;
 		try_files $uri $uri/ /router.php;
 	}
 
