@@ -1,0 +1,37 @@
+server {
+	listen 80;
+
+	root /usr/share/nginx/vhosts/{website}/public;
+	index index.html index.htm index.php router.php;
+
+	server_name	{website}	www.{website};
+
+	access_log /dev/null;
+	error_log /dev/null;
+
+	location / {
+	  index index.html	index.php	router.php;
+		try_files $uri $uri/ /router.php;
+	}
+
+	location ~* .(jpg|jpeg|png|gif|ico|svg|ttf|eot|woff|otf)$ {
+		expires 365d;
+	}
+	
+	location ~* .(css|js)$ {
+		expires 1d;
+	}
+
+	location ~ [^/]\.php(/|$) {
+		fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+		if (!-f $document_root$fastcgi_script_name) {
+			return 404;
+		}
+
+		fastcgi_send_timeout 600s;
+		fastcgi_read_timeout 600s;
+		fastcgi_pass 127.0.0.1:9000;
+		fastcgi_index router.php;
+		include fastcgi_params;
+	}
+}
