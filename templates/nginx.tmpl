@@ -1,13 +1,21 @@
 server {
 	listen 80;
 
-	root /usr/share/nginx/vhosts/{website}/public;
-	index index.html index.htm index.php router.php;
-
 	server_name	{website}	www.{website};
 
 	access_log /dev/null;
 	error_log /dev/null;
+
+	root /usr/share/nginx/vhosts/{website}/public;
+	
+        index index.html index.htm index.php router.php;
+
+	gzip on;
+	gzip_min_length 1000;
+	gzip_proxied any;
+	gzip_types text/plain text/xml text/css application/x-javascript text/javascript application/xml+rss;
+	gzip_vary on;
+	gzip_disable "MSIE [1-6]\.(?!.*SV1)";
 
 	location / {
 		index	index.html	index.php	router.php;
@@ -28,8 +36,8 @@ server {
 			return 404;
 		}
 
-		fastcgi_send_timeout 600s;
-		fastcgi_read_timeout 600s;
+		fastcgi_send_timeout 300s;
+		fastcgi_read_timeout 300s;
 		fastcgi_pass 127.0.0.1:9000;
 		fastcgi_index router.php;
 		include fastcgi_params;
