@@ -39,12 +39,13 @@ N.b.: within vhost project folder structure
   * src (composer.json lives in here)
      * vendor 
          * autoload.php (composer autoloader)
-         * siteEngine 
-             * **data** 
-             * models
-             * libaries
-             * helpers
-             * **assets** 
+         * cd2
+             * base 
+                 * **data** 
+                 * models
+                 * libaries
+                 * helpers
+                 * **assets** 
          * {vendor[x]} 
              * **data** 
              * models
