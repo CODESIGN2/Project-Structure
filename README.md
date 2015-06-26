@@ -47,11 +47,12 @@ N.b.: within vhost project folder structure
                  * helpers
                  * **assets** 
          * {vendor[x]} 
-             * **data** 
-             * models
-             * libaries
-             * helpers
-             * **assets** 
+             * {package} 
+                 * **data** 
+                 * models
+                 * libaries
+                 * helpers
+                 * **assets** 
 
 Assets folder structure
 ========================
